@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:wght@100..900&display=swap');
+
+:root{
+    --dark-cyan:hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --very-dark-blue:hsl(212, 21%, 14%);
+    --dark-grayish-blue:hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --para-font-size:14px;
+
+    --ff-Monserrat: "Montserrat", sans-serif;
+    --ff-Fraunces:"Fraunces", serif;
+    --fw-Ms-500:500;
+    --fw-Ms-700:700;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: var(--cream);
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#wrapper{
+    height: 470px;
+    width: 650px;
+    display: flex;
+}
+.image-box,
+.detail-box{
+    width: 50%;
+}
+.image-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px
+}
+.detail-box{
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 0px 15px  15px 0px;
+}
+.perfume{
+    color: var(--dark-grayish-blue);
+    font-family: var(--ff-Monserrat);
+    font-weight: var(--fw-Ms-500);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 2rem;
+}
+.Big-title{
+    margin-block:1.4rem;
+    font-size: 2.1rem;
+    font-family: var(--ff-Fraunces);
+    font-weight: var(--fw-Ms-700);
+    color: var(--very-dark-blue);
+}
+.para{
+    color: var(--dark-grayish-blue);
+    font-family: var(--ff-Monserrat);
+    font-style: normal;
+    font-weight: var(--fw-Ms-500);
+    font-size: .9rem;
+}
+.price-tag{
+    margin-block: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+.price{
+    font-size: 2.1rem;
+    color: var(--dark-cyan);
+    font-family: var(--ff-Fraunces);
+    font-weight: var(--fw-Ms-700);
+}
+.before-price{
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+    font-family: var(--ff-Monserrat);
+    font-weight: 500;
+
+}
+.btn{
+    font-family: var(--ff-Monserrat);
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+    background-color: var(--dark-cyan);
+    font-weight: var(--fw-Ms-500);
+    font-size: 1.1rem;
+}
+.btn span{
+    margin-right: 12px;
+}
